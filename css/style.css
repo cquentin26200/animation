@@ -1,0 +1,84 @@
+@keyframes anim {
+  0% {
+    background-color: red;
+    left: 0;
+    top: 0;
+  }
+
+  25% {
+    background-color: yellow;
+    left: 15rem;
+    top: 0;
+  }
+
+  50% {
+    background-color: blue;
+    top: 15rem;
+    left: 15rem;
+  }
+
+  75% {
+    left: 0rem;
+    top: 15rem;
+    background-color: green;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+}
+
+div.first {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  animation: anim 5s infinite;
+}
+
+div.second {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 25rem;
+  background-color: red;
+  transform: rotate(90deg);
+  transition: background 2s, transform 2s;
+  margin-bottom: 5rem;
+}
+
+div.second:hover {
+  transition: background 2s, transform 2s;
+  transform: rotate(-180deg);
+  background-color: blue;
+}
+
+div.thirst {
+  display: flex;
+  padding: 3rem;
+}
+
+div.thirst div {
+    background-color: white;
+    padding: 1rem;
+}
+
+div.thirst img {
+    width: 100%;
+}
+
+div.thirst div+div {
+    margin-left: 3rem;
+}
+
+div.thirst div.firstImg {
+    transform: rotate(7deg);
+}
+
+div.thirst div.secondImg {
+    transform: rotate(-8deg) translateX(-3rem);
+}
+
+body {
+    background-color: #E9E9E9
+}
